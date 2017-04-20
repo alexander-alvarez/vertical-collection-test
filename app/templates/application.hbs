@@ -1,0 +1,10 @@
+  <div style="height: 200px; width: 100px;" class="scrollable">
+    {{#vertical-collection range
+      minHeight=20
+      staticHeight=true
+      as |item i|}}
+      <div style="height:20px;">
+        {{item.index}}:{{i}}
+      </div>
+    {{/vertical-collection}}
+  </div>
